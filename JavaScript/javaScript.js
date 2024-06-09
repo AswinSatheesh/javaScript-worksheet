@@ -28,7 +28,7 @@
 
 // console.log(user);
 
-let ArrayName = ['A','B','C'];
+// let ArrayName = ['A','B','C'];
 
 // ArrayName.push('E');
 // // ArrayName.unshift('E')
@@ -107,10 +107,17 @@ let ArrayName = ['A','B','C'];
 //     console.log(globalPlayer.company.comp_name);
 // }
 
-const numbox = [1,5,2,30,10];
+// const numbox = [1,5,2,30,10];
 
-const newArray = numbox.map((value)=>value*2).filter((data)=> data).reduce((sum,value) => sum + value,0);
+// const newArray = numbox.map((value)=>value*2).filter((data)=> data).reduce((sum,value) => sum + value,0);
 
 
-console.log(newArray);
+// console.log(newArray);
 // console.log(numbox);
+
+document.addEventListener("DOMContentLoaded",function(){
+    document.querySelector("#brand").innerHTML = "CAPITHAN";
+    const header = document.querySelectorAll(".brand");
+    header.forEach((data)=> data.style.color= "red")
+})
+
