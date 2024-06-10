@@ -115,9 +115,26 @@
 // console.log(newArray);
 // console.log(numbox);
 
-document.addEventListener("DOMContentLoaded",function(){
-    document.querySelector("#brand").innerHTML = "CAPITHAN";
-    const header = document.querySelectorAll(".brand");
-    header.forEach((data)=> data.style.color= "red")
-})
+// document.addEventListener("DOMContentLoaded",function(){
+//     document.querySelector("#brand").innerHTML = "CAPITHAN";
+//     const header = document.querySelectorAll(".brand");
+//     header.forEach((data)=> data.style.color= "red")
+// })
 
+let myobj = {
+    id :0,
+    name : "Aswin",
+    company : "Google"
+}
+
+const stringifyObj = JSON.stringify(myobj);
+console.log( stringifyObj);
+
+const jsonObj = `{
+    "id" : 1,
+    "name": "Aswin",
+    "place": "kochi"
+}`;
+
+const convertToObj = JSON.parse(jsonObj);
+console.log();
